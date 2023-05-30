@@ -1,13 +1,9 @@
 * {
-    color: rgb(255, 242, 204);
+    color: rgb(154, 97, 54);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-image: url('../assets/background_image.jpg');
-    background-size: 1440px 1024px;
+    font-size: 18px;
 }
 
 header {
@@ -16,6 +12,10 @@ header {
     display: flex;
     align-items: end;
     gap: 400px;
+}
+
+header * {
+    color: rgb(255, 242, 204);
 }
 
 header ul {
@@ -40,6 +40,65 @@ main {
     background-image: url('../assets/background_image.jpg');
     background-size: 1440px 924px;
     padding: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+fieldset {
+    background-color: rgb(255, 242, 204);
+}
+
+select,
+select option,
+input {
+    color: black;
+}
+
+.foodForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.inputSection {
+    display: flex;
+}
+
+.foodForm div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+fieldset,
+button {
+    padding: 5px;
+}
+
+table,
+th,
+td {
+    border: 2px rgb(154, 97, 54) solid;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table caption {
+    font-weight: bold;
+}
+
+table {
+    background-color: rgb(255, 242, 204);
 }
 
 footer {
@@ -48,6 +107,10 @@ footer {
     padding: 20px;
     background-color: rgb(154, 97, 54);
     align-items: center;
+}
+
+footer * {
+    color: rgb(255, 242, 204);
 }
 
 .social_links {
