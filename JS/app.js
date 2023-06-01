@@ -1,5 +1,7 @@
 'use strict';
 
+let foodItemsContainer = [];
+
 function FoodItem(id, name, type, price) {
     this.foodID = id;
     this.foodName = name;
@@ -12,8 +14,6 @@ function createFoodItemID() {
     return Math.ceil(Math.random() * (9999 - 1000) + 1000);
 }
 
-let foodItemsContainer = [];
-
 function handler(e) {
     e.preventDefault();
 
@@ -25,7 +25,7 @@ function handler(e) {
     // for testing
     console.log(`id => ${id}\nname => ${name}\ntype => ${type}\nprice => ${price}`);
 
-    let foodItem = new FoodItem(id, name, type, price);
+    new FoodItem(id, name, type, price);
     let foodContainerJSON = JSON.stringify(foodItemsContainer);
     window.localStorage.setItem('Food List', foodContainerJSON);
 }
