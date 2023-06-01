@@ -88,20 +88,9 @@ button {
     padding: 5px;
 }
 
-table,
-th,
-td {
-    border: 2px rgb(154, 97, 54) solid;
-    border-collapse: collapse;
-    padding: 5px;
-}
-
-table caption {
-    font-weight: bold;
-}
-
-table {
-    background-color: rgb(255, 242, 204);
+.formButtonSection {
+    display: flex;
+    gap: 10px;
 }
 
 footer {
